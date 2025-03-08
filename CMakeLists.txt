@@ -9,7 +9,7 @@ set(CMAKE_AUTORCC ON)
 
 find_package(Qt6 COMPONENTS Core Sql REQUIRED)
 
-file(GLOB_RECURSE SOURCES sources/*.cpp sources/*.hpp resources.qrc)
+file(GLOB_RECURSE SOURCES sources/*.cpp sources/*.hpp resources.qrc resources/*.*)
 
 include_directories(sources)
 
