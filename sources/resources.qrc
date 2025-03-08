@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="root">
+    <file>tables.sql</file>
+  </qresource>
+</RCC>
