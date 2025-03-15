@@ -43,8 +43,11 @@ void MainScene::mainCycle() {
                 system("cls");
                 break;
             case Actions::EditingNote:
-                if (!EditingNoteScene::instance()->startEditingScene())
+                if (!EditingNoteScene::instance()->startEditingScene()) {
+                    Database::instance()->closeDatabase();
+                    std::terminate();
                     return;
+                }
                 break;
             case Actions::DeleteNote:
                 deleteNote();

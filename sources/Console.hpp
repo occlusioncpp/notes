@@ -19,6 +19,7 @@ namespace notes {
             return &instance;
         }
         ~Console() {}
+        
         QString requestString(std::function<bool(const QString&)> validator) noexcept;
         qint64 requestNumber(std::function<bool(const qint64)> validator) noexcept;
         QString requestString() noexcept;
