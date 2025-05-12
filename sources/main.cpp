@@ -3,14 +3,11 @@
 #include <OpenScene.hpp>
 #include <MainScene.hpp>
 #include <Console.hpp>
-#include <Windows.h>
 
 using namespace notes;
 
 int main(int argc, char *argv[]) {
     QCoreApplication a(argc, argv);
-    SetConsoleCP(CP_UTF8);
-    SetConsoleOutputCP(CP_UTF8);
     //Open scene cycle
     while(true) {
         OpenScene::instance()->requestOpenInformation();
